@@ -1,8 +1,19 @@
-<form action="https://check-kon.shigeda-kon.workers.dev" method="POST">
-  <textarea name="message" required></textarea>
-  
-  <div class="cf-turnstile" data-sitekey="0x4AAAAAAFMs6FDWs3SMFlNr"></div>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>認証テスト</title>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</head>
+<body>
+  <h1>人間認証</h1>
   
-  <button type="submit">送信</button>
-</form>
+  <form action="https://check-kon.shigeda-kon.workers.dev" method="POST">
+    <!-- 入力欄はいらない -->
+    
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAAFMs6FDWs3SMFlNr"></div>
+    
+    <button type="submit">送信</button>
+  </form>
+</body>
+</html>
